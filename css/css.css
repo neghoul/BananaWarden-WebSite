@@ -191,3 +191,86 @@ img[alt="vpn-banana"]:hover {
 .content img {
     user-select: none;
 }
+
+.contacts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 60px;
+    background-color: #f8f8f8;
+    border-radius: 24px;
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-info h3 {
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.contact-info ul li {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input, .contant-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    box-sizing: border-box;
+    border-radius: 10px;
+    transition: border-color 0.3 ease-in-out;
+}
+
+.contact-form input, .contant-form textarea {
+    outline: none;
+    border-color: rgb(20, 20, 20);
+}
+
+.contact-form button {
+    background-color: rgb(20, 20, 20);
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3 ease-in-out, transform 0.2s ease-in-out;
+}
+
+.contact-form button:hover {
+    background-color: #333;
+    transform: translateY(-2px);
+}
+
+.contact-form button {
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact-form button:active {
+    transform: translateY(0);
+}
