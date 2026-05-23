@@ -4,7 +4,7 @@ body {
     font-family: "Science Gothic", sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #effd72;
+    background-color: #fff6a2;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -150,14 +150,11 @@ body {
 
 }
 
-text h3 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #1a1a1a;
+.text {
     position: relative;
 }
 
-.text h3::after {
+.banan::after {
     content: '';
     display: block;
     width: 60px;
@@ -167,14 +164,40 @@ text h3 {
     border-radius: 2px;
 }
 
-.text p {
+.text h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+    position: relative;
+    left: -50px;
+}
+
+.text h2::after {
+    position: relative;
+    right: -170px;
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #FCFF52;
+    margin-top: 8px;
+    border-radius: 2px;
+}
+
+.lyche {
+    position: relative;
+    left: -50px;
     font-size: 1.1rem;
     line-height: 1.6;
     color: #4a4a4a;
 }
 
 img[alt="vpn-banana"] {
-    width: 700px;
+    max-width: 500px;
+    border-color: whitesmoke;
+    position: relative;
+    right: -20px;
     padding: auto;
     align-items: center;
     justify-content: center;
@@ -206,14 +229,14 @@ img[alt="vpn-banana"]:hover {
 .emails {
     display: inline-block;
     width: 288px;
-    border-bottom: 2px solid #f2e424;
+    border-bottom: 2px solid #FCFF52;
     border-radius: 1px;
 }
 
 .number {
     display: inline-block;
     width: 210px;
-    border-bottom: 2px solid #f2e424;
+    border-bottom: 2px solid #FCFF52;
     border-radius: 1px;
 }
 
@@ -221,7 +244,7 @@ img[alt="vpn-banana"]:hover {
     user-select: none;
     display: inline-block;
     width: 95px;
-    border-bottom: 2px solid #f2e424;
+    border-bottom: 2px solid #FCFF52;
     border-radius: 1px;
 }
 
@@ -371,7 +394,7 @@ img[alt="vpn-banana"]:hover {
 }
 
 .opis1 {
-    border-bottom: 2px solid #f2e424;
+    border-bottom: 2px solid #FCFF52;
     border-radius: 1px;
 }
 
@@ -395,7 +418,7 @@ img[alt="vpn-banana"]:hover {
 }
 
 .opis2 {
-    border-bottom: 2px solid #f2e424;
+    border-bottom: 2px solid #FCFF52;
     border-radius: 1px;
 }
 
@@ -427,7 +450,7 @@ img[alt="vpn-banana"]:hover {
 }
 
 .opis3 {
-    border-bottom: 2px solid #f2e424;
+    border-bottom: 2px solid #FCFF52;
     border-radius: 1px;
 }
 
@@ -480,7 +503,15 @@ div {
 }
 
 .reviews review-cards {
-    color: white;   
+    color: white;
+}
+
+.review {
+    position: relative;
+    justify-content: center;
+    gap: 30px;
+    display: flex;
+    flex-direction: row;
 }
 
 .text1 {
@@ -494,6 +525,8 @@ div {
     gap: 50px;
     justify-content: center;
 }
+
+
 
 .text1 p {
     max-width: 600px;
@@ -515,7 +548,7 @@ div {
     background-color: #333333;
 }
 
-.reviews h4 {
+/* .cart-review {
     max-width: 600px;
     height: auto;
     color: white;
@@ -530,16 +563,11 @@ div {
     transition: transform 0.3s ease-in-out;
     user-select: none;
     top: -5.2px;
-}
-
-.reviews h4:hover {
-    transform: translateY(-1.5px);
-    background-color: #333333;
-}
+} */
 
 .choose {
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 1325px;
+    margin: 80px auto;
     padding: 0 20px;
     display: flex;
     gap: 30px;
@@ -562,6 +590,7 @@ div {
     text-align: center;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease;
+    border-bottom: 4px solid transparent;
 }
 
 .choose1:hover {
@@ -576,6 +605,7 @@ div {
     text-align: center;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease;
+    border-bottom: 4px solid transparent;
 }
 
 .choose2:hover {
@@ -590,9 +620,14 @@ div {
     text-align: center;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease;
+    border-bottom: 4px solid transparent;
 }
 
 .choose3:hover {
     transform: translateY(-10px);
     border-bottom: 4px solid rgb(20, 20, 20);
+}
+
+.why {
+    text-align: center;
 }
