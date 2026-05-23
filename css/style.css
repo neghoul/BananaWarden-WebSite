@@ -211,8 +211,25 @@ img[alt="vpn-banana"]:hover {
     transform: translateY(-5px);
 }
 
+.content {
+    justify-content: center;
+}
+
 .content img {
     user-select: none;
+    position: relative;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.text {
+    display: flex;
+    flex-direction: row;
 }
 
 .contacts {
