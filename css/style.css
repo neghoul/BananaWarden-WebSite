@@ -81,7 +81,7 @@ body {
 }
 
 .center-site ul li a:hover {
-    color: #f2e424;
+    color: #FCFF52;
     transition: color 0.2s ease-in-out;
 
 }
@@ -630,4 +630,14 @@ div {
 
 .why {
     text-align: center;
+}
+
+.why::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #FCFF52;
+    margin: 10px auto 0;
+    border-radius: 2px;
 }
