@@ -658,3 +658,20 @@ div {
     margin: 10px auto 0;
     border-radius: 2px;
 }
+
+.btn {
+    text-decoration: none;
+    color: #fff;
+    background-color: #2a2a2a;
+    padding: 7px 13px;
+    border-radius: 20px;
+    transition: all 500ms ease;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.btn:active {
+    transform: scale(1);
+}
